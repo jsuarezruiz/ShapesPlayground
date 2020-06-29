@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShapesPlayground.Views.ClipGallery"
+    Title="Clip Gallery">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="12">
+                <Image
+                    Source="maui.jpg"/>
+                <Label Text="Clipped image with EllipseGeometry" />
+                <Image
+                    HeightRequest="200"
+                    WidthRequest="200"
+                    Source="maui.jpg">
+                    <Image.Clip>
+                        <EllipseGeometry
+                            RadiusX="75"
+                            RadiusY="75"
+                            Center="100,100" />
+                    </Image.Clip>
+                </Image>
+                <Label
+                    Text="Clipped image with GeometryGroup" />
+                <Image
+                    Source="maui.jpg">
+                    <Image.Clip>
+                        <GeometryGroup
+                            FillRule="EvenOdd">
+                            <EllipseGeometry
+                                RadiusX="100"
+                                RadiusY="100"
+                                Center="150,150" />
+                            <EllipseGeometry
+                                RadiusX="100"
+                                RadiusY="100"
+                                Center="250,150" />
+                            <EllipseGeometry
+                                RadiusX="100"
+                                RadiusY="100"
+                                Center="150,250" />
+                            <EllipseGeometry
+                                RadiusX="100"
+                                RadiusY="100"
+                                Center="250,250" />
+                        </GeometryGroup>
+                    </Image.Clip>
+                </Image>
+                <Label
+                    Text="Clipped image with PathGeometry" />
+                <Image
+                    Source="maui.jpg">
+                    <Image.Clip>
+                        <PathGeometry
+                            Figures="M8 148 L156 148 L132 12 Z" />
+                    </Image.Clip>
+                </Image>
+                <StackLayout
+                    BackgroundColor="Red">
+                    <StackLayout.Clip>
+                        <EllipseGeometry
+                            RadiusX="100"
+                            RadiusY="100"
+                            Center="0,100" />
+                    </StackLayout.Clip>
+                    <Label
+                        Text="Test 1"/>
+                    <Label
+                        Text="Test 2"/>
+                    <Label
+                        Text="Test 3"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

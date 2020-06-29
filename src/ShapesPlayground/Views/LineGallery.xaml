@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShapesPlayground.Views.LineGallery"
+    Title="Line Gallery">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="Line">
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="12">
+                <Label
+                    Text="Basic Line"/>
+                <Line
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Stroke="Red"
+                    X1="0" Y1="0"
+                    X2="100" Y2="50"/>
+                <Label
+                    Text="Use Stroke options with Line"/>
+                <Line
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Stroke="Orange"
+                    StrokeThickness="5"
+                    StrokeDashArray="1 2"
+                    StrokeLineCap="Round"
+                    X1="0" Y1="0"
+                    X2="100" Y2="100"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

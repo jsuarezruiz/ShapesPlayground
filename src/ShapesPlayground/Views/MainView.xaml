@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShapesPlayground.Views.MainView"
+    Title="Shapes Playground">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="12">
+                <Label
+                    Text="Shapes"/>
+                <Button
+                    x:Name="EllipseBtn"
+                    Text="Ellipse Gallery"
+                    Clicked="OnEllipseBtnClicked"/>
+                <Button
+                    x:Name="RectangleBtn"
+                    Text="Rectangle Gallery"
+                    Clicked="OnRectangleBtnClicked"/>
+                <Button
+                    x:Name="LineBtn"
+                    Text="Line Gallery"
+                    Clicked="OnLineBtnClicked"/>
+                <Button
+                    x:Name="PolylineBtn"
+                    Text="Polyline Gallery"
+                    Clicked="OnPolylineBtnClicked"/>
+                <Button
+                    x:Name="PolygonBtn"
+                    Text="Polygon Gallery"
+                    Clicked="OnPolygonBtnClicked"/>
+                <Button
+                    x:Name="PathBtn"
+                    Text="Path Gallery"
+                    Clicked="OnPathBtnClicked"/>
+                <Label
+                    Text="Transformation"/>
+                <Button
+                    x:Name="PathAspectBtn"
+                    Text="Path Aspect Gallery"
+                    Clicked="OnPathAspectBtnClicked"/>
+                <Button
+                    x:Name="PathRenderTransformBtn"
+                    Text="Path RenderTransform Gallery"
+                    Clicked="OnPathRenderTransformBtnClicked"/>
+                <Label
+                    Text="Clip"/>
+                <Button
+                    x:Name="ClipBtn"
+                    Text="Clip Gallery"
+                    Clicked="OnClipBtnClicked"/>
+                <Button
+                    x:Name="ClipViewsBtn"
+                    Text="Clip Views Gallery"
+                    Clicked="OnClipViewsBtnClicked"/>
+                <Label
+                    Text="Samples"/>
+                <Button
+                    x:Name="ClipArtManBtn"
+                    Text="ClipArtMan Gallery"
+                    Clicked="OnClipArtManBtnClicked"/>
+                <Button
+                    x:Name="BabyElephantBtn"
+                    Text="BabyElephant Gallery"
+                    Clicked="OnBabyElephantBtnClicked"/>
+                <Button
+                    x:Name="FromSvgBtn"
+                    Text="From SVG Gallery"
+                    Clicked="OnFromSvgBtnClicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

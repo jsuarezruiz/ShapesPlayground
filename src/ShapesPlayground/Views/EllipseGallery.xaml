@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ShapesPlayground.Views.EllipseGallery"
+    Title="Ellipse Gallery">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="Ellipse">
+                <Setter Property="HorizontalOptions"  Value="Start" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="12">
+                <Label
+                    Text="Basic Ellipse"/>
+                <Ellipse
+                    Fill="Red"
+                    HeightRequest="50"
+                    WidthRequest="150"/>
+                <Label
+                    Text="Circle"/>
+                <Ellipse
+                    Fill="Green"
+                    HeightRequest="150"
+                    WidthRequest="150"/>
+                <Label
+                    Text="Using Stroke with Ellipse"/>
+                <Ellipse
+                    Stroke="Black"
+                    Fill="Red"
+                    HeightRequest="50"
+                    WidthRequest="150"/>
+                <Label
+                    Text="Using Stroke options with Ellipse"/>
+                <Ellipse
+                    StrokeThickness="6"
+                    StrokeDashArray="1 1"
+                    Stroke="Black"
+                    Fill="Red"
+                    HeightRequest="50"
+                    WidthRequest="150"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
