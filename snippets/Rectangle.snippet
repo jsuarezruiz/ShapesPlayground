@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Rectangle</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new Rectangle</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>tab</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Fill</ID>
+        <ToolTip>The color used to fill the Rectangle</ToolTip>
+        <Default>Black</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Height</ID>
+        <ToolTip>The height of the Rectangle</ToolTip>
+        <Default>50</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Width</ID>
+        <ToolTip>The height of the Rectangle</ToolTip>
+        <Default>150</Default>
+        <Function>
+        </Function>
+      </Literal>   
+      <Literal Editable="true">
+        <ID>RadiusX</ID>
+        <ToolTip>The x-axis radius of the ellipse that is used to round the corners of the Rectangle</ToolTip>
+        <Default>0</Default>
+        <Function>
+        </Function>
+      </Literal>   
+      <Literal Editable="true">
+        <ID>RadiusY</ID>
+        <ToolTip>The y-axis radius of the ellipse that is used to round the corners of the Rectangle</ToolTip>
+        <Default>0</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Rectangle Fill="$Fill$" RadiusX="$RadiusX$" RadiusY="$RadiusY$" HeightRequest="$Height$" WidthRequest="$Width$" />]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

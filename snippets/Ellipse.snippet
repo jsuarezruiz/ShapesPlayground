@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Ellipse</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new Ellipse</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>tab</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Fill</ID>
+        <ToolTip>The color used to fill the Ellipse</ToolTip>
+        <Default>Black</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Height</ID>
+        <ToolTip>The height of the Ellipse</ToolTip>
+        <Default>50</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Width</ID>
+        <ToolTip>The height of the Ellipse</ToolTip>
+        <Default>150</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Ellipse Fill="$Fill$" HeightRequest="$Height$" WidthRequest="$Width$" />]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

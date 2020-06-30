@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Line</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new Line</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>tab</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Stroke</ID>
+        <ToolTip>The Stroke color of the Line</ToolTip>
+        <Default>Black</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Height</ID>
+        <ToolTip>The height of the Rectangle</ToolTip>
+        <Default>100</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Width</ID>
+        <ToolTip>The height of the Rectangle</ToolTip>
+        <Default>100</Default>
+        <Function>
+        </Function>
+      </Literal>   
+      <Literal Editable="true">
+        <ID>X1</ID>
+        <ToolTip>The x-coordinate for the start point of the line</ToolTip>
+        <Default>0</Default>
+        <Function>
+        </Function>
+      </Literal>   
+      <Literal Editable="true">
+        <ID>Y1</ID>
+        <ToolTip>The y-coordinate for the start point of the line</ToolTip>
+        <Default>0</Default>
+        <Function>
+        </Function>
+      </Literal> 
+      <Literal Editable="true">
+        <ID>X2</ID>
+        <ToolTip>The x-coordinate for the end point of the line</ToolTip>
+        <Default>100</Default>
+        <Function>
+        </Function>
+      </Literal>   
+      <Literal Editable="true">
+        <ID>Y2</ID>
+        <ToolTip>The y-coordinate for the end point of the line</ToolTip>
+        <Default>0</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Line Stroke="$Stroke$" X1="$X1$" Y1="$Y1$" X2="$X2$" Y2="$Y2$" HeightRequest="$Height$" WidthRequest="$Width$" />]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Polygon</Title>
+    <Author>Microsoft Corporation</Author>
+    <Description>Snippet for a new Polygon</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>tab</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Stroke</ID>
+        <ToolTip>The stroke color of the Polygon</ToolTip>
+        <Default>Black</Default>
+        <Function>
+        </Function>
+      </Literal>      
+      <Literal Editable="true">
+        <ID>Points</ID>
+        <ToolTip>The collection that contains the vertex points of the Polygon</ToolTip>
+        <Default></Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Height</ID>
+        <ToolTip>The height of the Polygon</ToolTip>
+        <Default>100</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Width</ID>
+        <ToolTip>The height of the Polygon</ToolTip>
+        <Default>100</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="XAML">
+      <![CDATA[<Polygon Stroke="$Stroke$" Points="$Points$" HeightRequest="$Height$" WidthRequest="$Width$" />]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
